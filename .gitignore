@@ -1,0 +1,10 @@
+# 源工程里混着内部文件，同步时只带构建产物；这几条是保险。
+CONTEXT.md
+AGENTS.md
+daily/
+verification/
+.reference/
+capture-notes/
+node_modules/
+
+.DS_Store
