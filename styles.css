@@ -174,9 +174,15 @@ img { max-width: 100%; }
 .download-product h2 { font-size: 28px; font-weight: 500; margin-top: 20px; letter-spacing: -.5px; }
 .download-product p { font-size: 13px; color: #868d99; margin-top: 12px; }
 .download-panel>.button { margin-top: 32px; min-width: 190px; }
-.download-note { font-size: 12px; color: #868d99; margin-top: 16px; }
-.download-legal { display: flex; justify-content: center; gap: 12px; font-size: 11px; color: #9199a6; margin-top: 24px; }
-.download-legal a:hover { color: #404853; }
+.install-guide { margin-top: 24px; }
+.install-guide summary { display: inline-flex; align-items: center; gap: 4px; list-style: none; cursor: pointer; font-size: 11px; color: #9199a6; }
+.install-guide summary::-webkit-details-marker { display: none; }
+.install-guide summary:hover { color: #404853; }
+.install-guide summary .icon { width: 12px; height: 12px; transition: transform .3s var(--ease); }
+.install-guide[open] summary .icon { transform: rotate(180deg); }
+.install-steps { max-width: 760px; margin: 20px auto 0; padding: 24px 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 20px; text-align: left; font-size: 13px; line-height: 1.9; color: #3d434c; }
+.install-steps ol { list-style: none; margin: 10px 0; padding-left: 18px; }
+.install-steps code { font-family: ui-monospace, Menlo, monospace; font-size: 12px; padding: 2px 6px; border-radius: 6px; background: #f1f2f4; white-space: nowrap; }
 .faq-section { max-width: 1060px; margin: 72px auto 0; display: grid; grid-template-columns: 1fr 1.6fr; gap: 72px; }
 .faq-section h2 { font-size: 28px; font-weight: 500; }
 .faq-list details { border-bottom: 1px solid var(--line); }
@@ -228,7 +234,7 @@ img { max-width: 100%; }
   .story-heading h2, .sources-section h2, .agent-section>h2 { font-size: 27px; }.story-label { font-size: 21px; }.story-description>span { font-size: 13px; }.story-panel { aspect-ratio: 1440/1100; border-radius: 14px; }
   .sources-section { padding-top: 80px; padding-bottom: 0; }.source-map { margin-top: 32px; aspect-ratio: 900/570; }.source-map>svg { top: 0; }.source-center img { width: 82px; height: 82px; }.source-tile { width: 48px; height: 48px; }.source-node>span { font-size: 9px; margin-top: 7px; }.source-a { left: 24%; top: 20%; }.source-b { left: 9%; }.source-c { left: 24%; top: 80%; }.source-d { left: 76%; top: 20%; }.source-e { left: 91%; }.source-f { left: 76%; top: 80%; }
   .cta-card { padding: 48px 20px; }.cta-card h2 { font-size: min(27px, calc((100vw - 88px) / 11)); }.cta-actions { gap: 10px; margin-top: 32px; flex-wrap: wrap; }.cta-actions .button { font-size: 12px; min-height: 42px; padding-inline: 15px; }.cta-actions .icon { width: 14px; height: 14px; }.footer-top { flex-direction: column; gap: 32px; }.footer-columns { width: 100%; gap: 32px; grid-template-columns: 1fr 1fr; }.footer-columns h3 { margin-bottom: 12px; }.footer-columns a { font-size: 12px; padding-block: 8px; }.footer-bottom { margin-top: 32px; font-size: 10px; }
-  .download-page { padding-top: 124px; }.download-page>h1 { font-size: 36px; }.download-panel { margin-top: 40px; padding: 40px 20px; }.download-product img { width: 80px; height: 80px; border-radius: 18px; }.download-product h2 { font-size: 24px; }.download-product p { font-size: 12px; }.faq-section { grid-template-columns: 1fr; gap: 26px; margin-top: 48px; }.faq-section h2 { font-size: 25px; }.faq-list summary { font-size: 12px; }.faq-answer { font-size: 11px; }
+  .download-page { padding-top: 124px; }.install-steps { padding: 18px 20px; }.download-page>h1 { font-size: 36px; }.download-panel { margin-top: 40px; padding: 40px 20px; }.download-product img { width: 80px; height: 80px; border-radius: 18px; }.download-product h2 { font-size: 24px; }.download-product p { font-size: 12px; }.faq-section { grid-template-columns: 1fr; gap: 26px; margin-top: 48px; }.faq-section h2 { font-size: 25px; }.faq-list summary { font-size: 12px; }.faq-answer { font-size: 11px; }
   .legal-page { padding-top: 96px; }.legal-heading { padding: 24px 0; }.legal-heading h1 { font-size: 36px; }.legal-meta { font-size: 9px; gap: 18px; }.legal-notice { display: block; padding: 16px; font-size: 10px; margin-bottom: 30px; }.legal-notice p { margin-top: 6px; }.legal-layout { display: block; padding-bottom: 36px; }.legal-toc { position: static; margin-bottom: 32px; }.legal-toc nav { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 12px; }.legal-toc a { font-size: 9px; gap: 6px; min-height: 34px; }.print-button { font-size: 10px; margin-top: 14px; padding: 18px 0; }.legal-content h2 { font-size: 19px; gap: 10px; margin-bottom: 16px; }.legal-content p { font-size: 12px; }.legal-ending { font-size: 11px; }.not-found h1 { font-size: 26px; }
 }
 @media(prefers-reduced-motion:reduce) { html { scroll-behavior: auto; } *,*:before,*:after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }.button:hover,.button:active { transform: none; }.story-pin { height: auto; margin-top: 0; }.story-stage { position: static; height: auto; padding-block: 56px; }.story-canvas { height: auto; padding-top: 0; margin-top: 0; mask-image: none; -webkit-mask-image: none; }.story-strip { transform: none !important; }.story-panel { transform: none !important; opacity: 1 !important; } }
