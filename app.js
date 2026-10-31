@@ -102,9 +102,9 @@ if (organization) {
   const diagram = document.getElementById('note-view-diagram');
   const notes = [...diagram.querySelectorAll('.view-note')];
   const layouts = {
-    project: { positions: [[58,48],[58,104],[58,160],[266,48],[266,104],[266,160]], label: '同一组六篇笔记，按工作和生活两个项目归类' },
-    source: { positions: [[24,58],[162,58],[300,58],[162,134],[24,134],[300,134]], label: '同一组六篇笔记，按文稿、Obsidian 和 AI 工具三个来源归类' },
-    type: { positions: [[150,14],[150,92],[150,170],[278,170],[278,14],[278,92]], label: '同一组六篇笔记，按笔记、计划和清单三种类型归类' },
+    project: { positions: [[58,64],[58,132],[266,64],[266,132]], label: '同一组四篇笔记，按工作和生活两个项目归类' },
+    source: { positions: [[24,64],[162,64],[300,64],[162,132]], label: '同一组四篇笔记，按文稿、Obsidian 和 AI 工具三个来源归类' },
+    type: { positions: [[150,14],[150,92],[150,170],[278,14]], label: '同一组四篇笔记，按笔记、计划和清单三种类型归类' },
   };
   organization.querySelectorAll('[data-note-view]').forEach(button => button.addEventListener('click', () => {
     const view = button.dataset.noteView;
@@ -115,9 +115,9 @@ if (organization) {
   }));
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(entries => {
-      if (entries.some(entry => entry.isIntersecting)) { organization.classList.add('is-visible'); observer.disconnect(); }
-    }, { threshold: .25 });
-    observer.observe(organization);
+      entries.forEach(entry => entry.target.classList.toggle('is-visible', entry.isIntersecting));
+    }, { threshold: .2 });
+    organization.querySelectorAll('.organization-art').forEach(art => observer.observe(art));
   }
 }
 

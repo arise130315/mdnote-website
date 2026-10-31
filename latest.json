@@ -1,0 +1,10 @@
+{
+  "version": "0.2",
+  "build": 2,
+  "minimumSystemVersion": "15.0",
+  "notes": [
+    "优化界面与图标",
+    "改进录音切换和文档列表体验"
+  ],
+  "downloadUrl": "https://mdnote.blinkwork.cn/download/"
+}
