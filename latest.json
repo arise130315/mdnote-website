@@ -1,11 +1,11 @@
 {
-  "version": "0.3",
-  "build": 3,
+  "version": "0.4",
+  "build": 4,
   "minimumSystemVersion": "15.0",
   "notes": [
-    "新增侧栏版本更新提示",
-    "支持连续空行，优化编辑体验",
-    "浮动格式条采用更明亮的系统毛玻璃"
+    "侧栏支持原生拖动排序并长期记住顺序",
+    "侧栏分组默认显示，支持独立隐藏，统一图文对齐",
+    "完善空文档清理、重复统计及系统附属文件过滤"
   ],
   "downloadUrl": "https://mdnote.blinkwork.cn/download/"
 }
