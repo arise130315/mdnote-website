@@ -1,11 +1,10 @@
 {
-  "version": "0.4",
-  "build": 4,
+  "version": "0.5",
+  "build": 5,
   "minimumSystemVersion": "15.0",
   "notes": [
-    "侧栏支持原生拖动排序并长期记住顺序",
-    "侧栏分组默认显示，支持独立隐藏，统一图文对齐",
-    "完善空文档清理、重复统计及系统附属文件过滤"
+    "优化侧栏刷新性能",
+    "完善空白新笔记取消与列表选择体验"
   ],
   "downloadUrl": "https://mdnote.blinkwork.cn/download/"
 }
