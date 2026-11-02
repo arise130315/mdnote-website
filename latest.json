@@ -1,10 +1,9 @@
 {
-  "version": "0.5",
-  "build": 5,
+  "version": "0.6",
+  "build": 6,
   "minimumSystemVersion": "15.0",
   "notes": [
-    "优化侧栏刷新性能",
-    "完善空白新笔记取消与列表选择体验"
+    "修复笔记修改时间停留在“刚刚”的问题"
   ],
   "downloadUrl": "https://mdnote.blinkwork.cn/download/"
 }
