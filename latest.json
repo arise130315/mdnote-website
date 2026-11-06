@@ -1,10 +1,12 @@
 {
-  "version": "0.8",
-  "build": 8,
+  "version": "0.9",
+  "build": 9,
   "minimumSystemVersion": "15.0",
   "notes": [
-    "新增笔记锁定：加密保存，用触控 ID 或登录密码解开",
-    "侧栏项目右键可在 Finder 中显示"
+    "正式签名并通过苹果公证，打开不再提示无法验证开发者",
+    "设置改成系统设置样式",
+    "未收录按包分组，可整包移除、随时撤回",
+    "升级后请在系统设置里重新授权完全磁盘访问"
   ],
   "downloadUrl": "https://mdnote.blinkwork.cn/download/"
 }
